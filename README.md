@@ -64,5 +64,8 @@ January 13, 2018	TRB Annual Meeting (Final stage for nominating the winner).
 
 
 # FAQs
+1. Can I participate to more than one teams? 
+- No, each participant should join only one Team.
+
 
 
