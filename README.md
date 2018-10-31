@@ -20,23 +20,35 @@ This competition is built on the Didi Chuxing Gaia Open Data Initiative. The ava
 
 # Problem Formulation
 Participants are asked to develop a traffic forecasting scheme to predict the average speed every 5 minutes at the road section enclosed by the following coordinates (WGS-84):
+
 •	Point 1: 34.248, 108.9375
+
 •	Point 2: 34.248, 108.93645
+
 •	Point 3: 34.241, 108.93645
+
 •	Point 4: 34.241, 108.9375
+
 Predictions should be separately made for each direction of travel.
 
 # Rules
 •	Teams (single or multiple participants) must register for the data competition via email to Eleni I. Vlahogianni (elenivl@central.ntua.gr) by October 30, 2018.
+
 •	At least one member of the team must register for the 2019 TRB meeting. Proof of TRB registration must be submitted via email along with the data competition registration.  
+
 •	Following the registration deadline of October 30, 2018, the data will be provided to all registered teams in the form of a csv file (Predictions.csv). This csv file will include the time periods where the Teams should generate the speed predictions based on their models.
+
 •	Prediction accuracy will be evaluated using the root mean squared error.
+
 •	Participants may not exceed four submissions before the deadline. In the case of multiple submissions, the highest score will count at the end of the competition.
+
 •	The final submission must include: 
-o	The Predictions.csv file with both observed and predicted values, 
-o	The code, which replicates the entire procedure (data preparation and visualization, model development, testing, visualization of results, predictions extraction etc.). Code must be properly commented to allow reviewers to understand the logic.  
-o	A short paper (no more than 3 pages) detailing the approach used, advantages and disadvantages and main outcomes.
+  o	The Predictions.csv file with both observed and predicted values, 
+  o	The code, which replicates the entire procedure (data preparation and visualization, model development, testing, visualization of results, predictions extraction etc.). Code must be properly commented to allow reviewers to understand the logic.  
+  o	A short paper (no more than 3 pages) detailing the approach used, advantages and disadvantages and main outcomes.
+
 •	Allowable languages/environments: R, Python, Matlab/Octave, C, C++, C#, Java, TensorFlow, Cognitive Toolkit. Other programming languages/environments may be allowed if proper justification is provided by the Team and approved by contest committee. Approval for other languages/environments must be sought prior to the submittal deadline.
+
 •	Teams must agree to share their code using Jupyter Notebook.  The code will be archived and open to public through an open project that will be created in GitHub by the Committee. 
 
 # Panel Members
