@@ -68,5 +68,5 @@ January 13, 2018	TRB Annual Meeting (Final stage for nominating the winner).
 - Each participant should join only one Team.
 
 2. What tool to use for coordinates conversion (between GCJ-02 and WGS-84) ?
-- Since some teams have questions regarding the study area, we decided to share a screenshot from openstreetmaps. The blue rectangle represents the study area. Be sure to use the same coordinate system using the eviltransform in python.
+- Since some teams have questions regarding the study area, we decided to share a screenshot from openstreetmaps. The red rectangle represents the study area. Be sure to use the same coordinate system using the eviltransform in python.
 
