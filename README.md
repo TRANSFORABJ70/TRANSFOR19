@@ -72,3 +72,10 @@ January 13, 2019:	TRB Annual Meeting (Final stage for nominating the winner).
 
 3. What is the timezone in Xi'an, Shaanxi, China?
 - For the specific area GMT+8 is used. The same timezone is used in the Predictions.zip files.
+
+4. What does the Predictions_north.csv include?
+- The Predictions_north file includes the average speed of vehicles traveling to north (which means that latitude increasing) per 5 min intervals. The symbol "x" stands for the time intervals you are asked to generate predictions.
+
+5. How are speeds  calculated in the Predictions files?
+- The average speeds are calculated based on the distributed GPS data (extra day file). This extra day dataset does not contain trajectories for the specific road section during the prediction hours (marked with x in the predictions_north and south files). The average speed seen in the Predictions files is the average of all speeds of all vehicles traveling in the specific road section per direction of travel.
+
