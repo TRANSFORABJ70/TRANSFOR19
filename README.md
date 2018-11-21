@@ -81,9 +81,11 @@ January 13, 2019:	TRB Annual Meeting (Final stage for nominating the winner).
 
 6. How distances and speeds are calculated?
 -   We use the Pandas Python library. Speeds are calculated in km/hr based on the following formula.
-     df.at[i, 'speed'] = df['distance'].iloc[i] / (df['timestamp'].iloc[i] - df['timestamp'].iloc[i-1]) * 3.6
+
+df.at[i, 'speed'] = df['distance'].iloc[i] / (df['timestamp'].iloc[i] - df['timestamp'].iloc[i-1]) * 3.6
   
     Distances were calculated on the following function:
+
         def calculate_distance(lat1, lon1, lat2, lon2):
             earth_radius = 6371*1000  # m
             dlat = math.radians(lat2-lat1)
