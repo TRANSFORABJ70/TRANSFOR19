@@ -79,7 +79,7 @@ January 13, 2019:	TRB Annual Meeting (Final stage for nominating the winner).
 5. How are speeds  calculated in the Predictions files?
 - The average speeds are calculated based on the distributed GPS data (extra day file). This extra day dataset does not contain trajectories for the specific road section during the prediction hours (marked with x in the predictions_north and south files). The average speed seen in the Predictions files is the average of all speeds of all vehicles traveling in the specific road section per direction of travel.
 
-6. How distances and speeds are calculated?
+6. How are speeds and distances calculated?
 -   We use the Pandas Python library. Speeds are calculated in km/hr based on the following formula.
 
 df.at[i, 'speed'] = df['distance'].iloc[i] / (df['timestamp'].iloc[i] - df['timestamp'].iloc[i-1]) * 3.6
