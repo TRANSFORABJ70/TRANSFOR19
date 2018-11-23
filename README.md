@@ -80,20 +80,17 @@ January 13, 2019:	TRB Annual Meeting (Final stage for nominating the winner).
 - The average speeds are calculated based on the distributed GPS data (extra day file). This extra day dataset does not contain trajectories for the specific road section during the prediction hours (marked with x in the predictions_north and south files). The average speed seen in the Predictions files is the average of all speeds of all vehicles traveling in the specific road section per direction of travel.
 
 6. How are speeds and distances calculated?
--   We use the Pandas Python library. Speeds are calculated in km/hr based on the following formula.
+•	We use the Pandas Python library. Speeds are calculated in km/hr based on the following formula.
+  o	df.at[i, 'speed'] = df['distance'].iloc[i] / (df['timestamp'].iloc[i] - df['timestamp'].iloc[i-1]) * 3.6
 
-df.at[i, 'speed'] = df['distance'].iloc[i] / (df['timestamp'].iloc[i] - df['timestamp'].iloc[i-1]) * 3.6
-  
-    Distances were calculated on the following function:
+•	Distances were calculated on the following function:
+    o	def calculate_distance(lat1, lon1, lat2, lon2):
+          earth_radius = 6371*1000  # m
+          dlat = math.radians(lat2-lat1)
+          dlon = math.radians(lon2-lon1)
+          a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
+          c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+          d = earth_radius * c
+          return d
 
-        def calculate_distance(lat1, lon1, lat2, lon2):
-            earth_radius = 6371*1000  # m
-            dlat = math.radians(lat2-lat1)
-            dlon = math.radians(lon2-lon1)
-            a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon/2) *                math.sin(dlon/2)
-            c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
-            d = earth_radius * c
-            return d
-
-
-
+•	In order to calculate speeds, we used a combination of pandas.DataFrame.groupby and pandas.Grouper with frequency = 5 minutes.
