@@ -88,13 +88,13 @@ df.at[i, 'speed'] = df['distance'].iloc[i] / (df['timestamp'].iloc[i] - df['time
 - Distances were calculated on the following function:
 ```
 def calculate_distance(lat1, lon1, lat2, lon2):
-          			earth_radius = 6371*1000  # m
-             dlat = math.radians(lat2-lat1)
-          			dlon = math.radians(lon2-lon1)
-a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
-c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
-d = earth_radius * c
-return d
+  earth_radius = 6371*1000  # m
+  dlat = math.radians(lat2-lat1)
+  dlon = math.radians(lon2-lon1)
+  a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
+  c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+  d = earth_radius * c
+  return d
 ```
 - In order to calculate speeds, we used a combination of [pandas.DataFrame.groupby](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.groupby.html) and [pandas.Grouper](https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.Grouper.html) with frequency = 5 minutes.
 
