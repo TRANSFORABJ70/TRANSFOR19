@@ -98,3 +98,57 @@ def calculate_distance(lat1, lon1, lat2, lon2):
 ```
 - In order to calculate speeds, we used a combination of [pandas.DataFrame.groupby](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.groupby.html) and [pandas.Grouper](https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.Grouper.html) with frequency = 5 minutes.
 
+# RESULTS (Pre-selection stage)
+The results (average RMSE in both directions of travel) of the pre-selection stage of the competition are now available.
+
+| Team Name                | Organization                                                 | Country                     | RMSE   |                     |
+|--------------------------|--------------------------------------------------------------|-----------------------------|--------|---------------------|
+| Traffic Flaw Theory*     | University of California, Irvine                             | USA                         | 3.800  | Submission 2        |
+| iUTSgo*                  | University of Washington                                     | USA                         | 4.347  | Submission 2        |
+| IBM*                     | IBM                                                          | Ireland                     | 4.517  | Submission 2        |
+| Iowa_State_REACTOR*      | Iowa State University                                        | USA                         | 4.627  | Submission 3        |
+| Deusto*                  | University of Deusto                                         | Spain                       | 4.691  |                     |
+| New Start                | ETH Zurich                                                   | Switzerland                 | 4.745  |                     |
+| UW                       | University of Washington                                     | USA                         | 4.925  | Submission 1        |
+| FA&NTASY                 | Florida Atlantic University+Nanyang Technological University | International Collaboration | 5.065  | Submission 2        |
+| T4T                      | Ryerson University                                           | Canada                      | 5.091  | Submission 2        |
+| YWWY                     | Rutgers University                                           | USA                         | 5.100  | Submission (CM)     |
+| Calchas                  | CERTH                                                        | Greece                      | 5.105  | Submission 1        |
+| ReCAST                   | Rensselaer Polytechnic Institute                             | USA                         | 5.234  | Submission 1        |
+| SPARTA                   | University of Texas at Austin                                | USA                         | 5.289  | Submission (STATIC) |
+| Aurora                   | New York University + Rensselaer Polytechnic Institute       | USA                         | 5.538  | Submission 1        |
+| Marlik                   | Texas A&M University                                         | USA                         | 5.642  |                     |
+| Illinois Data Scientists | University of Illinois at Urbana-Champaign                   | USA                         | 5.709  |                     |
+| BoilerDreamer            | Purdue University                                            | USA                         | 5.740  |                     |
+| Kung Fu Panda            | New Jersey Institute of Technology                           | USA                         | 5.992  |                     |
+| River Hawk               | University of Massachusetts, Lowell                          | USA                         | 6.013  | Submission 2        |
+| DET-NOR                  | Old Dominion University                                      | USA                         | 6.101  |                     |
+| ITS_OFFICE               | Sun Yat-sen University                                       | China                       | 6.222  | Submission 2        |
+| Monash                   | Monash University                                            | Australia                   | 6.904  | Submission 4        |
+| Connetics                | Connetics Transportation Group                               | USA                         | 6.942  |                     |
+| Northwestern             | Northwestern                                                 | USA                         | 7.378  | Submission 3        |
+| The Speedometers         | University of California, Davis                              | USA                         | 8.009  |                     |
+| UNLV & NOVA              | UNLV                                                         | USA                         | 8.178  |                     |
+| YMiner                   | Old Dominion University                                      | USA                         | 8.267  |                     |
+| AB2                      | University of California, Berkeley                           | USA                         | 11.165 |                     |
+| RPI                      | Rensselaer Polytechnic Institute                             | USA                         | 11.277 |                     |
+| Knights                  | University of Central Florida                                | USA                         | 12.263 |                     |
+| SCSU-MST                 | South Carolina State University                              | USA                         | 13.683 |                     |
+| * finalist               |                                                              |                             |        |                     |
+
+![Screenshot](preselection.png)
+
+The Top 5 Teams will present their work during the TRB Annual Meeting Workshop 1058 on “Big Data Without Machine Learning Is Just Lots of Data: A Guided Tour to Big Data and Machine Learning” organized by the Standing Committee on Artificial Intelligence and Advanced Computing Applications (ABJ70). 
+
+In case a pre-selected Team cannot attend the TRB workshop, they will have to inform immediately the Organizing Committee.
+
+Congratulations to: 
+Traffic Flaw Theory, 
+iUTSgo, 
+IBM, 
+Iowa_State_REACTOR, and 
+Deusto 
+
+and good luck to the second stage of the competition!!!
+
+
